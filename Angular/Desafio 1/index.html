@@ -12,31 +12,29 @@
      
     <link rel="stylesheet" href="/Angular/styles/card.css">
     <script src="/Angular/src/Components/CardNews.js" defer></script>
-    <script src="/Angular/src/Components/TituloDinamico.js"></script>
+    <script src="/Angular/src/Components/TituloDinamico.js" defer></script>
 
 </head>
 <body>
 
     <div class="container">
-
-        <div class="card">
-            <div class="card__left">
-                <span>By Rafael Cartaxo Borges</span>
-                <a href="#">Programação - Angular</a>
-                <p>Desenvolvimento de aplicação em utilizando Angular
-                    Css - HTML - JavaScript testeteti uaoiudroa ajskdljak sdaalkdsjlkajsd lkajskdla
-                    dkslaksdajs dlkajkdjals dasjdhakjshd
-                </p>
-            </div>
-
-            <div class="card right">
-                <img id="imagem" src="/Angular/assets/vader.png">
-
-            </div>
-        </div>
-    </div>
     
-    <card-news></card-news>
-    <titulo-dinamico titulo="Teste"></titulo-dinamico>
+    <card-news 
+        autor="Rafael"
+        title="Programação - Angular"
+        link-url="www.google.com"
+        photo="/Angular/assets/vader.png"
+        content="Desenvolvimento de aplicação utilizando Angular"
+    >
+    </card-news>
+
+    <card-news        
+        title="Programação - Web Components"
+        link-url="www.google.com"
+        content="Aplicação de Web Components"
+    >
+    </card-news>
+
+
 </body>
 </html>
