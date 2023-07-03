@@ -83,5 +83,22 @@ class Character {
         console.log(`Attack with ${this.strength} points`);
     }
 }
-const p1 = new Character("Ryu", 2, 50);
-p1.attack;
+//Subclass
+class Magician extends Character {
+    constructor(name, strength, skill, magicPoints) {
+        super(name, strength, skill);
+        this.magicPoints = magicPoints;
+    }
+}
+const p1 = new Character("Ryu", 20, 50);
+const p2 = new Magician("Atena", 1, 55, 90);
+console.log(p1);
+console.log(p2);
+//generic
+function concatArray(...itens) {
+    return new Array().concat(...itens);
+}
+const numArray = concatArray([1, 5], [3]);
+const stgArray = concatArray(["Rafael", "Felipe", "João"]);
+console.log(numArray);
+console.log(stgArray);
